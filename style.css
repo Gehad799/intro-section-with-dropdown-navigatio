@@ -1,0 +1,432 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("./fonts/Epilogue-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0px;
+  font-family: Epilogue;
+  background-color: rgba(250, 250, 250, 255);
+}
+
+nav {
+  display: flex;
+  padding: 10px 25px ;
+  height: 60px;
+  width: 100%;
+}
+
+.logo {
+  width: 60px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: hsl(0, 0%, 41%);
+}
+
+ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+ 
+nav .buttons{
+  margin-left: auto;
+  align-self: center;
+
+}
+nav .Register {
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+
+}
+
+.Register:hover {
+  border-color: black;
+}
+
+.dropdown1 {
+  width: 160px;
+  height: 165px;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  list-style: none;
+  background-color: white;
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  box-shadow: 1px 7px 10px -4px;
+}
+
+.dropdown1 img {
+  margin-right: 10px;
+}
+
+.dropdown1 li,
+.dropdown2 li {
+  margin-top: 15px;
+}
+
+
+.dropdown2 {
+  width: 120px;
+  height: 130px;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  list-style: none;
+  background-color: white;
+  position: absolute;
+  left: 240px;
+  top: 40px;
+  box-shadow: 1px 7px 10px -4px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.content > img {
+  height: 530px;
+  padding-top: 50px;
+  width: 30%;
+}
+
+.content .card {
+  width: 60%;
+  padding-top: 90px;
+}
+
+.card h1 {
+  font-size: 70px;
+  width: 460px;
+}
+
+.card p {
+  margin-top: -20px;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  width: 400px;
+  line-height: 20px;
+}
+
+.card button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 140px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-style: none;
+  font-weight: 500;
+}
+
+.card .change {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card footer img {
+  width: 70px;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+aside{
+  display: flex;
+}
+.openMenue{
+  margin-top: 15px;
+  margin-left: auto;
+}
+.openMenue:hover{
+  cursor: pointer;
+}
+section{
+  background-color: white;
+  position: fixed;
+  top:0px;
+  right: 0px;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  padding-top: 20px;
+  transition: 0.5s;
+
+}
+.closeMenue{
+  position: absolute;
+  right: 15px;
+
+}
+.closeMenue:hover{
+  cursor: pointer;
+}
+section ul{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: hsl(0, 0%, 41%);
+}
+section ul li{
+  margin-top: 30px;
+}
+
+.dropdown1Side{
+  width: 160px;
+  height: 165px;
+  padding: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  list-style: none;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.dropdown1Side img {
+  margin-right: 10px;
+}
+
+.dropdown1Side li,
+.dropdown2Side li {
+  margin-top: 15px;
+}
+
+
+.dropdown2Side {
+  width: 120px;
+  height: 130px;
+  padding: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  list-style: none;
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
+
+
+section .Register{
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+}
+section .login{
+  padding: 10px;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+
+}
+
+@media (min-width:881px){
+  aside, section{
+    display: none;
+  }
+}
+@media (max-width: 880px) {
+  nav{
+    display: none;
+  }
+
+  .content{
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px;
+  }
+  .content>img{
+    content: url("./images/image-hero-mobile.png");
+    width: 100%;
+    padding-left: 20px;
+  }
+  .content .card{
+    width: 100%;
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card h1{
+    width: 100%;
+    padding: 0px;
+  }
+  .card p{
+    width: 100%;
+    font-size: larger;
+  }
+  .card button{
+    font-weight: 700;
+    padding: 15px;
+  }
+  .card footer  {
+    padding-bottom: 50px;
+  }
+  .card footer img{
+    width: 15%;
+    margin-left: 30px;
+
+  }
+}
+
+@media(max-width:723px){
+  .card h1{
+    font-size: 60px;
+  }
+}
+@media(max-width:685px){
+  .card footer img{
+    margin-left: 10px;
+  }
+  .card p{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  
+}
+@media(max-width:628px){
+  .card h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media(max-width:533px){
+  .card h1{
+    font-size: 40px;
+  }
+  .content img{
+    padding-left: 10px;
+  }
+}
+@media(max-width:437px){
+  .card h1{
+    font-size: 35px;
+  }
+  .card footer img{
+    margin-right: 20px;
+  }
+  .card p{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+}
+@media(max-width:389px){
+  .card h1{
+    font-size: 30px;
+  }
+  .card footer img{
+    margin-right: 15px;
+  }
+
+}
+@media(max-width:375px){
+  .content {
+    width: 105%;
+  }
+  .content img{
+    padding-right: 10px;
+
+  }
+  .content .card{
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+  .card footer img{
+    width: 20%;
+    margin-right: 0px;
+  }
+  .card p{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+@media(max-width:350px){
+  .content {
+    width: 110%;
+  }
+  .content img{
+    padding-right: 5px;
+  }
+  .card p{
+    padding-right: 20px;
+  }
+  .card footer img{
+    width: 20%;
+    margin-right: 3px;
+  }
+}
+@media(max-width:340px){
+  .content {
+    width: 120%;
+  }
+  .content img{
+    padding-right: 12px;
+  }
+  .card p{
+    padding-right: 25px;
+    padding-left: 15px;
+  }
+ 
+
+}
+@media(max-width:310px){
+  .content {
+    width: 130%;
+  }
+ 
+  .card p{
+    padding-right: 20px;
+  }
+
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <nav >
+      <img class="logo" src="./images/logo.svg">
+      <ul>
+        <li id="feature">Features
+          <img id="arrow1" src="./images/icon-arrow-down.svg">
+        </li>
+        <li id="company">Company
+          <img  id="arrow2" src="./images/icon-arrow-down.svg">
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+        
+      </ul>
+      <ul class="buttons">
+        <li >Login</li>
+        <li  class="Register">Register</li>
+      </ul>
+    </nav>
+    <ul class="dropdown1" style="visibility: hidden;">
+      <li>
+        <img src="./images/icon-todo.svg">
+        Todo List
+      </li>
+      <li>
+        <img src="./images/icon-calendar.svg">
+        Calender
+      </li>
+      <li>
+        <img src="./images/icon-reminders.svg">
+        Reminders
+      </li>
+      <li><img src="./images/icon-planning.svg">
+        Planning</li>
+    </ul>
+    <ul class="dropdown2" style="visibility: hidden;">
+      <li>History</li>
+      <li>Our Team</li>
+      <li>Blog</li>
+    </ul>
+    <aside >
+      <img  class="logo" src="./images/logo.svg">
+      <img class="openMenue" src="./images/icon-menu.svg">
+    </aside>
+    <section >
+      <img class="closeMenue" style="visibility: hidden;" src="./images/icon-close-menu.svg">
+      <ul>
+        <li id="featureSide">Features
+          <img id="arrow1Side" src="./images/icon-arrow-down.svg">
+        </li>
+        <ul class="dropdown1Side" style="display: none;" >
+            <li>
+              <img src="./images/icon-todo.svg">
+              Todo List
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg">
+              Calender
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg">
+              Reminders
+            </li>
+            <li><img src="./images/icon-planning.svg">
+              Planning</li>
+        </ul>
+        <li id="companySide">Company
+          <img  id="arrow2Side" src="./images/icon-arrow-down.svg">
+        </li>
+        <ul class="dropdown2Side" style="display: none;" >
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul> 
+  
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <ul class="buttons">
+        <li class="login">Login</li>
+        <li  class="Register">Register</li>
+      </ul>
+      
+    </section>
+    
+    <div class="content">
+
+    <div class="card">
+      <h1> Make remote work</h1>
+      <p> Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button id="more">Learn more</button>
+      <footer>
+        <img src="./images/client-databiz.svg">
+        <img src="./images/client-audiophile.svg">
+        <img src="./images/client-meet.svg">
+        <img src="./images/client-maker.svg">
+      </footer>
+    </div>
+
+    <img  src="./images/image-hero-desktop.png">
+
+    </div>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Gehad Alaa</a>.
+  </div> -->
+  <!-- <script src="./bootstrap/bootstrap.min.js"></script> -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
